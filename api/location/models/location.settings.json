@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "name": "Location",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Url": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Venue": {
+      "type": "string"
+    },
+    "Lat": {
+      "type": "float"
+    },
+    "Long": {
+      "type": "float"
+    },
+    "notes": {
+      "collection": "notes"
+    },
+    "swallows": {
+      "via": "location",
+      "collection": "swallow"
+    }
+  }
+}

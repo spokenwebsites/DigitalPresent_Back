@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "swallows",
+  "info": {
+    "name": "Swallow",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SwallowID": {
+      "type": "integer"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Content": {
+      "type": "text"
+    },
+    "creators": {
+      "collection": "creators",
+      "via": "swallows",
+      "dominant": true
+    },
+    "Related": {
+      "type": "text"
+    },
+    "genres": {
+      "collection": "genre"
+    },
+    "Links": {
+      "collection": "url"
+    },
+    "Duration": {
+      "type": "decimal"
+    },
+    "Language": {
+      "type": "string"
+    },
+    "location": {
+      "model": "location",
+      "via": "swallows"
+    },
+    "organizers": {
+      "collection": "organizers",
+      "via": "swallows",
+      "dominant": true
+    },
+    "Image": {
+      "type": "string"
+    }
+  }
+}

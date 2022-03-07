@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizers",
+  "info": {
+    "name": "Organizers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "swallows": {
+      "via": "organizers",
+      "collection": "swallow"
+    }
+  }
+}

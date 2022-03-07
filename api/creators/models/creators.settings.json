@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "creators",
+  "info": {
+    "name": "Creators",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "URL": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Role": {
+      "collection": "activity"
+    },
+    "swallows": {
+      "via": "creators",
+      "collection": "swallow"
+    }
+  }
+}

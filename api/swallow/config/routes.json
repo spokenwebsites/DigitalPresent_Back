@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/swallows",
+      "handler": "swallow.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/swallows/count",
+      "handler": "swallow.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/swallows/:id",
+      "handler": "swallow.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/swallows",
+      "handler": "swallow.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/swallows/:id",
+      "handler": "swallow.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/swallows/:id",
+      "handler": "swallow.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

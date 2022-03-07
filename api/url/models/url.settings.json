@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "urls",
+  "info": {
+    "name": "URL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Link": {
+      "type": "string"
+    }
+  }
+}
